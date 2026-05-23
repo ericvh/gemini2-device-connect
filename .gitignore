@@ -1,0 +1,21 @@
+# Local virtualenv
+.venv/
+
+# Orbbec SDK (downloaded by install.sh)
+vendor/
+
+# Runtime logs
+Log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Local config
+.env
+gemini2.config.yaml
+gemini2.config.yml
+gemini2.config.json

@@ -1,0 +1,5 @@
+device-connect-edge>=0.2.2
+pyorbbecsdk2>=2.1.0
+numpy>=1.24
+opencv-python-headless>=4.8
+pyyaml>=6.0

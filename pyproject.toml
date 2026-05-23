@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemini2-device-connect"
+version = "0.1.3"
+description = "Device Connect driver for Orbbec Gemini 2 depth cameras"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "device-connect-edge>=0.2.2",
+    "pyorbbecsdk2>=2.1.0",
+    "numpy>=1.24",
+    "opencv-python-headless>=4.8",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+gemini2-device-connect = "gemini2_device_connect.driver:main"
+
+[project.urls]
+Homepage = "https://deviceconnect.dev"
+Repository = "https://github.com/arm/device-connect"
+
+[tool.setuptools.packages.find]
+where = ["src"]

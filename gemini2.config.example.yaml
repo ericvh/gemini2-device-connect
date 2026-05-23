@@ -1,0 +1,10 @@
+# Device Connect portal connection (recommended for production)
+device_connect:
+  mode: portal
+  # Path to credentials downloaded from https://portal.deviceconnect.dev
+  credentials_file: ~/your-tenant-orbbec-001.creds.json
+  # device_id is inferred from the credentials file if omitted
+  messaging_backend: nats
+
+driver:
+  emit_interval: 1.0
