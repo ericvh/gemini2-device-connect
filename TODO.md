@@ -5,7 +5,6 @@
 - [ ] Install udev rules with sudo and verify USB open succeeds (`usbEnumerator openUsbDevice`)
 - [ ] Confirm all Gemini 2 streams start (color, depth, IR, IMU)
 - [ ] End-to-end test with `device-connect-agent-tools` on a second host
-- [x] Consolidate project and Orbbec SDK under `~/src` (`/data/src`)
 
 ## Driver improvements
 

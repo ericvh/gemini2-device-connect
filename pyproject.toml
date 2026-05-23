@@ -22,7 +22,7 @@ gemini2-device-connect = "gemini2_device_connect.driver:main"
 
 [project.urls]
 Homepage = "https://deviceconnect.dev"
-Repository = "https://github.com/arm/device-connect"
+Repository = "https://github.com/ericvh/gemini2-device-connect"
 
 [tool.setuptools.packages.find]
 where = ["src"]

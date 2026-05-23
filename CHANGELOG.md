@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Apache License 2.0 (`LICENSE`)
+
 - Device Connect **portal mode** with credentials from `gemini2.config.yaml`, environment variables, or auto-discovery in `$HOME`
 - `src/gemini2_device_connect/config.py` for config loading and credential resolution
 - `gemini2.config.example.yaml` with portal connection template
@@ -22,9 +24,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- `run_driver.sh` resolves all paths relative to the repo root (no hardcoded `/home/arm` or `/data/src` paths)
+- `run_driver.sh` resolves all paths relative to the repo root
 - Orbbec SDK now installs to `vendor/orbbec/` inside the project (self-contained, gitignored)
-- `install.sh` creates a local `.venv` instead of requiring Miniforge in `$HOME`
+- `install.sh` creates a local `.venv` for Python dependencies
 - Added `pyproject.toml` for editable install and `gemini2-device-connect` console script
 - Added `.gitignore`, `.env.example`, and optional `.env` overrides (`ORBBEC_SDK_DIR`, `GEMINI2_VENV`, `PYTHON`)
 
@@ -32,8 +34,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Moved project from `~/gemini2-device-connect` to `~/src/gemini2-device-connect` (`/data/src/gemini2-device-connect`)
-- Moved Orbbec SDK from `~/orbbec` to `~/src/orbbec` (`/data/src/orbbec`)
+- Relocated Orbbec SDK into `vendor/orbbec/` for a self-contained project layout
 - Updated launcher and documentation paths accordingly
 
 ## [0.1.0] - 2026-05-23
@@ -45,7 +46,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Separate IMU pipeline for accelerometer and gyroscope data
 - RPCs: `get_device_info`, `list_streams`, `get_frame`, `get_depth_stats`, `get_imu_reading`
 - Events: `frame_available`, `imu_available` with configurable emit interval
-- `install.sh` for Miniforge, Python dependencies, Orbbec SDK download, and udev guidance
+- `install.sh` for Python dependencies, Orbbec SDK download, and udev guidance
 - `run_driver.sh` launcher with correct `PYTHONPATH`, `LD_LIBRARY_PATH`, and D2D defaults
 - Project documentation: `README.md`, `TODO.md`, `CHANGELOG.md`
 - Source package under `src/gemini2_device_connect/`

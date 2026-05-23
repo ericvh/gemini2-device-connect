@@ -10,6 +10,7 @@ Clone or unpack anywhere — no hardcoded install paths:
 
 ```
 gemini2-device-connect/
+├── LICENSE
 ├── README.md
 ├── pyproject.toml
 ├── requirements.txt
@@ -49,7 +50,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 If system Python is older than 3.11, point install at a newer interpreter:
 
 ```bash
-PYTHON="$HOME/miniforge3/bin/python" ./install.sh
+PYTHON=/path/to/python3.11 ./install.sh
 ```
 
 ## Device Connect portal
@@ -162,4 +163,4 @@ gemini2-device-connect --device-id gemini2-001
 
 ## License
 
-Apache-2.0
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full text.
