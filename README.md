@@ -1,5 +1,7 @@
 # Orbbec Gemini 2 — Device Connect Driver
 
+[![CI](https://github.com/ericvh/gemini2-device-connect/actions/workflows/ci.yml/badge.svg)](https://github.com/ericvh/gemini2-device-connect/actions/workflows/ci.yml)
+
 A [Device Connect](https://deviceconnect.dev) edge driver that exposes depth, color, IR, and IMU streams from an Orbbec Gemini 2 over the Device Connect mesh. AI agents can discover the camera, invoke RPCs, and subscribe to frame events without knowing Orbbec SDK details.
 
 Tested on **NVIDIA Jetson Xavier NX** (Ubuntu 20.04, aarch64) with the Gemini 2 Developer Kit over USB.
@@ -151,6 +153,8 @@ From the project root (paths are relative):
 
 ```bash
 source .venv/bin/activate
+pip install -e ".[dev]"
+pytest tests/ -v
 export LD_LIBRARY_PATH="$(echo vendor/orbbec/OrbbecSDK_*/lib):${LD_LIBRARY_PATH:-}"
 python -m gemini2_device_connect --device-id gemini2-001
 ```

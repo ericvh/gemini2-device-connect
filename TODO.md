@@ -19,7 +19,7 @@
 ## Packaging and CI
 
 - [ ] Pin Orbbec SDK version in install script via env var or config
-- [ ] Basic smoke test that mocks Orbbec SDK for CI
+- [x] Basic unit tests with mocked Orbbec SDK for CI
 
 ## Production deployment
 

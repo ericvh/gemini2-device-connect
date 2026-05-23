@@ -4,6 +4,13 @@ All notable changes to this project are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.1.4] - 2026-05-23
+
+### Added
+
+- Unit tests for config loading, camera helpers, and driver RPC wiring (`tests/`)
+- GitHub Actions workflow (`.github/workflows/ci.yml`) running pytest on Python 3.11 and 3.12
+
 ## [0.1.3] - 2026-05-23
 
 ### Added
